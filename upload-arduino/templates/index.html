@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <form action="/call_function" method="post">
+        <label for="file">Enter Your file:</label>
+        <input type="text" id="file" name="file">
+        <label for="fbqn">Enter Your fbqn:</label>
+        <input type="text" id="fbqn" name="fbqn">
+        <label for="port">Enter Your Port:</label>
+        <input type="text" id="port" name="port">
+        <input type="submit">
+    </form>
+    <div id="info">
+        {% if file_loc %}
+        <span>this is your file location {{file_loc}}</span>
+        {% endif %}
+        {% if fbqn %}
+        <span>this is your fbqn {{fbqn}}</span>
+        {% endif %}
+        {% if port %}
+        <span>this is your port {{port}}</span>
+        {% endif %}
+    </div>
+</body>
+<script type="text/javascript"
+    src="{{ url_for('static',filename='script/script.js')}}"></script>
+</html>

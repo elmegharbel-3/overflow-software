@@ -1,0 +1,14 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto ;
+    width: fit-content;
+}
+#info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px auto 0;
+    width: fit-content;
+}
