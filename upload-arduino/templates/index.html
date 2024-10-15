@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
 </head>
 <body>
-    <form action="/call_function" method="post">
+    <form action="/call_function" method="post" enctype="multipart/form-data">
         <label for="file">Enter Your file:</label>
-        <input type="text" id="file" name="file">
+        <input type="file" id="file" name="file">
         <label for="fbqn">Enter Your fbqn:</label>
         <input type="text" id="fbqn" name="fbqn">
         <label for="port">Enter Your Port:</label>
@@ -19,7 +19,7 @@
     </form>
     <div id="info">
         {% if file_loc %}
-        <span>this is your file location {{file_loc}}</span>
+        <span>this is your file location {{file}}</span>
         {% endif %}
         {% if fbqn %}
         <span>this is your fbqn {{fbqn}}</span>
