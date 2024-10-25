@@ -25,6 +25,11 @@ def upload_arduino():
             return flask.render_template('index.html',file_loc=file_loc,port=port,fbqn=fbqn,compile_res=compile.stdout,upload_res=upload.stdout)  
         else:
             return flask.render_template('index.html',exist=True)
+<<<<<<< HEAD
 if __name__ == '__main__':     
     app.run(debug=True, port=8080,host="0.0.0.0",threaded=False)
 
+=======
+    if __name__ == '__main__':     
+        app.run(debug=True, port=8080,host="0.0.0.0",threaded=False)
+>>>>>>> cddc677f73d6c1ab560c0f15c63f17ac1e867137
