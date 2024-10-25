@@ -17,5 +17,5 @@ def upload_arduino():
         os.system("arduino-cli compile" + " " + fbqn + " " + file_loc)         
         os.system("arduino-cli upload" + " " + fbqn + " " + port + " " + file_loc)     
         return flask.render_template('index.html',file_loc=file_loc,port=port,fbqn=fbqn)  
-    if __name__ == '__main__':     
-        app.run(debug=True, port=8080,host="0.0.0.0",threaded=False)
+if __name__ == '__main__':     
+    app.run(debug=True, port=8080,host="0.0.0.0",threaded=False)
