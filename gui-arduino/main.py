@@ -10,6 +10,7 @@ def index():
 def upload_arduino():     
     if flask.request.method == "POST":         
         data = flask.request.form.to_dict()         
+<<<<<<< HEAD
         thefile = flask.request.files['file'] 
         file_name = thefile.filename  
         dir_name = file_name.rstrip(".ino")
@@ -27,3 +28,15 @@ def upload_arduino():
             return flask.render_template('index.html',exist=True)
     if __name__ == '__main__':     
         app.run(debug=True, port=8080,host="0.0.0.0",threaded=False)
+=======
+        thefile = flask.request.files['file']   
+        thefile.save("main-sketch/main-sketch.ino")   
+        file_loc = f"~/gui-arduino/main-sketch"
+        fbqn = "-b " + data["fbqn"]         
+        port = "-p " + data["port"]         
+        os.system("arduino-cli compile" + " " + fbqn + " " + file_loc)         
+        os.system("arduino-cli upload" + " " + fbqn + " " + port + " " + file_loc)     
+        return flask.render_template('index.html',file_loc=file_loc,port=port,fbqn=fbqn)  
+if __name__ == '__main__':     
+    app.run(debug=True, port=8080,host="0.0.0.0",threaded=False)
+>>>>>>> 0ff4466e517bca421c60d4af73819a3d89eebf68
