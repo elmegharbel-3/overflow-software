@@ -1,14 +1,59 @@
+body {
+    background-color: #F3F3E0;
+}
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 0 auto ;
     width: fit-content;
+    background-color: #CBDCEB;
+    border-radius: 20px;
+    padding: 10px;
+}
+form label {
+    text-align: center;
+}
+form input {
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    color: black;
+}
+form input[type=file]::file {
+    display: none;
+}
+form input[type=submit] {
+    background-color: #859F3D;
+    outline: none;
+    border: none;
+    color: white;
 }
 #info {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 30px auto 0;
+    margin: 30px auto 30;
     width: fit-content;
+    background-color: #133E87;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+#info p {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0px;
+}
+#compile,#upload {
+    background-color: #CBDCEB;
+    padding: 20px;
+}
+#upload {
+    background-color: #CBDCEB;
 }
