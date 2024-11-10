@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)
 # Initialize a list of camera indices
 camera_indices = [0,1]  # Assuming you have two cameras
-filename = "C:\main\Programming\overflow\OVERFLOW\gui\json\camera_data.json"
+filename = r"C:\main\Programming\overflow\OVERFLOW\gui\static\json\camera_data.json"
 camera_streams = {}
 with open(filename,"r") as file:
     cam_data = json.load(file)

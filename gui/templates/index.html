@@ -27,7 +27,7 @@
                     <div class="hover-menu">
                         <div class="menu-option" onclick="setPrimaryCamera(this.parentElement.parentElement)">Click to move</div>
                     </div>
-                    <select name= "quality_value" id="quality" onchange="changeQuality(this)">
+                    <select name= "quality_value" id="quality" onchange="changeQuality(this)" index="{{ camera }}" value>
                         <option value="20">very low</option>
                         <option value="40">low</option>
                         <option value="60">normal</option>
@@ -65,7 +65,7 @@
                     <div class="hover-menu">
                         <div class="menu-option">Click to move</div>
                     </div>
-                    <select name= "quality_value" id="quality" onchange="changeQuality(this)">
+                    <select name= "quality_value" id="quality" onchange="changeQuality(this)" index="{{ camera }} >
                         <option value="20">very low</option>
                         <option value="40">low</option>
                         <option value="60">normal</option>
@@ -91,6 +91,7 @@
         <div id="output" class="output"></div>
     </div>
 <script src="../static/script/script.js"></script>
+<script type="module" src="../static/script/read.js"></script>
 </body>
 
 </html>
