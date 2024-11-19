@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROV Camera Display</title>
     <link rel="stylesheet" href="../static/CSS/style.css">
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+    </script>
 </head>
 
 <body>
@@ -65,7 +75,7 @@
                     <div class="hover-menu">
                         <div class="menu-option">Click to move</div>
                     </div>
-                    <select name= "quality_value" id="quality" onchange="changeQuality(this)" index="{{ camera }} >
+                    <select name= "quality_value" id="quality" onchange="changeQuality(this)" index="{{ camera }}" >
                         <option value="20">very low</option>
                         <option value="40">low</option>
                         <option value="60">normal</option>
@@ -87,11 +97,15 @@
         </div>
     </div>
     <div class="container">
-        <h1>Joystick Status Monitor</h1>
-        <div id="output" class="output"></div>
+        <div class="joy-stick">
+            <h1>Joystick Status Monitor</h1>
+            <div id="output" class="output"></div>
+        </div>
+        <div id="model"></div>
     </div>
 <script src="../static/script/script.js"></script>
 <script type="module" src="../static/script/read.js"></script>
+<script type="module" src="../static/script/gui_3d.js"></script>
 </body>
 
 </html>

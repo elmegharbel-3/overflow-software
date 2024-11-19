@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dodge SRT Tomahawk [NO INTERIOR]
+* source:	https://sketchfab.com/3d-models/dodge-srt-tomahawk-no-interior-be44eea8c5e04bc1abddc149c49709bf
+* author:	ALEX MILOS (https://sketchfab.com/TEDIORE)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dodge SRT Tomahawk [NO INTERIOR]" (https://sketchfab.com/3d-models/dodge-srt-tomahawk-no-interior-be44eea8c5e04bc1abddc149c49709bf) by ALEX MILOS (https://sketchfab.com/TEDIORE) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
